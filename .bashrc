@@ -1,10 +1,7 @@
 source ~/.profile
 source ~/.prompt_string
 source ~/.bash_aliases
-function ssh-copy-id() { cat ~/.ssh/id_rsa.pub | ssh $1 "mkdir -p ~/.ssh; cat >> ~/.ssh/authorized_keys"; }
-
-# Rename an iTerm tab
-function renametab() { echo -ne "\033]0;"$1"\007"; }
+source ~/.bash_functions 
 
 export BUNDLER_EDITOR='emacs'
 export EDITOR=emacs
