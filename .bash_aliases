@@ -17,3 +17,9 @@ alias gpoh="git push origin HEAD"
 alias docker_delete_containers="docker rm $(docker ps -a -q);"
 
 alias docker_stop_containers="docker stop $(docker ps -aq);"
+
+alias gg="git grep --break --heading -n "
+
+alias emacs_client="emacsclient -c -a emacs"
+
+alias mr="make run"
