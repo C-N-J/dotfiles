@@ -18,3 +18,10 @@ function gemfile() {
 
     bundle
 }
+
+# installs ripper-tags get and generates TAGS
+function gen_tags() {
+    gem install ripper-tags
+
+    ripper-tags -R -f TAGS
+}
