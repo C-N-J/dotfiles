@@ -111,3 +111,6 @@ Module.symvers
 Mkfile.old
 dkms.conf
 hello callum
+
+# ctags
+TAGS
