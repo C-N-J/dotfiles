@@ -1,10 +1,11 @@
-source ~/.profile
 source ~/.prompt_string
 source ~/.bash_aliases
-source ~/.bash_functions 
+source ~/.bash_functions
 
-export BUNDLER_EDITOR='emacs'
-export EDITOR=emacs
+#export BUNDLER_EDITOR='emacs'
+#export EDITOR=emacs
+export ALTERNATE_EDITOR=""
+export EDITOR="emacsclient -c -a emacs"
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
