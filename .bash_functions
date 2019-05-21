@@ -1,5 +1,5 @@
 # Copy an SSH key to a server
-function ssh-copy-id() { cat ~/.ssh/id_rsa.pub | ssh $1 "mkdir -p ~/.ssh; cat >> ~/.ssh/authorized_keys"; }
+function ssh_copy_id() { cat ~/.ssh/id_rsa.pub | ssh $1 "mkdir -p ~/.ssh; cat >> ~/.ssh/authorized_keys"; }
 
 # Rename an iTerm tab
 function renametab() { echo -ne "\033]0;"$1"\007"; }
@@ -24,4 +24,9 @@ function gen_tags() {
     gem install ripper-tags
 
     ripper-tags -R -f TAGS
+}
+
+# checks whether binding.pry in git diff
+function pry_in_diff() {
+    git diff | grep binding.pry
 }
