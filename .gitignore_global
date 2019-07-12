@@ -114,3 +114,6 @@ hello callum
 
 # ctags
 TAGS
+
+# Pry
+.pryrc
